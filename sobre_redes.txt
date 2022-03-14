@@ -1,0 +1,15 @@
+--> ALGUNS COMANDOS IMPORTANTES SOBRE REDE.
+
+* $ ifconfig --> Exibe iformações sobre interface da rede e ip. (requer a instalação do net-tools).
+* $ hostname --> Informações sobre o host.
+* $ hostname -i --> Exibe o ip do loopback, que é o endereço da rede localhost.
+* $ hostname -I --> Exibe seu endereço ip na rede.
+* $ dig 'host' --> Exibe informações sobre o DNS de um host.
+* $ dig 'host' +short --> Exibe o ip de um host.
+* $ w --> Exibe informações detalhadas de um usuário de computador na rede.
+* $ who --> Exibe informações curtas do usuário do computador na rede.
+* $ whoami --> Exibe o nome do usuário do computador na rede.
+* $ traceroute 'host' --> Exibe irformações do caminho percorrido do seu host até o servidor.(precisa instalar o traceroute)
+* $ ping 'host' --> Testa o tempo resposta de um servidor.
+* $ finger --> Exibe informações do usuário do computador na rede. (precisa instalar o finger).
+
