@@ -1,0 +1,9 @@
+=== SOBRE CONTROLE DE USUÁRIO ===
+
+$ sudo adduser 'usuário' --> criar um novo usuário
+$ passwd 'usuário' --> muadar a senha de um usuário(senha longa)
+$ su 'usuário' --> trocar de usuário
+$ sudo userdel -r 'usuário' --> remove o usuário e sua pasta pessoal
+$ lastlog --> mostra todos os usuários e seus últimos acessos
+$ id --> mostra o id do usuário
+$ logname --> exibe o usuário atual logado
