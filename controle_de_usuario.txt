@@ -7,3 +7,65 @@ $ sudo userdel -r 'usuário' --> remove o usuário e sua pasta pessoal
 $ lastlog --> mostra todos os usuários e seus últimos acessos
 $ id --> mostra o id do usuário
 $ logname --> exibe o usuário atual logado
+$ sudo addgroup 'gupo' --> cria um grupo
+$ sudo adduser 'usuário' 'grupo' --> adicionar um usuário a um grupo
+$ sudo gpasswd -a --> mesma função anterior 
+$ sudo gpasswd -d 'usuário' 'grupo' --> remove um usuário de um grupo
+$ sudo groupdel 'grupo' --> remove um grupo
+
+=== PERMIÇÕES DO COMANDO CHMOD ===
+
++++++++++++++++++++++++
+OWNER | GROUP | OTHER |
++++++++++++++++++++++++
+  R   |   W   |   X   |
++++++++++++++++++++++++
+  4   |   2   |   1   |
++++++++++++++++++++++++
+
+
+=== EXECUÇÃO DO COMANDO CHMOD ===
+
+$ sudo chmod 'octais' 
+
+* Os octais são os números da tabela, que correspodem a dada permição.
+* Para mais de uma permiçao por coluna fazemos a soma dos números correspodentes.
+
+EXEMPLO DE UM ARQUIVO COM TODAS AS PERMIÇÕES EM TODAS AS COLUNAS:
+
+$ sudo chmod 777 'arquivo'
+
+
+=== LEGENDAS ====
+
+PERMIÇÕES
+
+R --> READ
+W --> WRITE
+X --> EXECUTION
+
+
+=== COMPACTAÇÃO DE ARQUIVOS ===
+
++++ GZIP +++
+
+$ gzip 'arquivo' --> compacta um arquivo com o gzip
+$ gunzip 'arquivo' --> descompacta um arquivo com o gzip
+$ gzip -9 'arquivo' --> usa a taxa de descompactação maxima do gzip(usando a opção -v também mostrará a taxa de descompactação)
+
++++ RAR +++
+
+$ rar a 'arquivo.rar' 'arquivo' --> compactação com o rar(necessita instalaçao do rar)
+$ rar a 'arquivos.rar' 'arquivo1' 'arquivo2' --> adicionando mais de um arquivo
+$ rar x 'arquivo.rar' --> descompactção
+
++++ TAR +++  ***O TAR É UM ARQUIVADOR! ***
+
+$ tar -cf 'arquivo.tar' 'arquivo1' 'arquivo2' --> arquivamentoo com o tar
+$ gzip 'arquivo.tar' --> compactção do arquivo tar
+$ tar -xvf 'arquivo.tar.gz' --> descompactção do arquivo tar
+$ tar -xvf 'arquivo.tar.gz' -C /home/j-paulo--> descompactção do arquivo tar para uma pasta específica
+
+
+
+
