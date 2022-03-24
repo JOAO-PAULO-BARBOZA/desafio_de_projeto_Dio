@@ -1,3 +1,6 @@
+'''SIMULAÇÃO DE UMA CORRIDA DE CARRO USANSO THREAD, ONDE AMBOS OS PROCESSOS CONCORREM.'''
+
+
 from threading import Thread
 import time
 
